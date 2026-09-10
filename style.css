@@ -1,0 +1,103 @@
+/* Simple styles for starred repositories list */
+:root{
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0366d6;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(15,23,42,0.06);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #0b1220;
+}
+
+#starredList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Card */
+.repo-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(15,23,42,0.08);
+}
+
+.repo-meta {
+  flex: 1 1 auto;
+}
+
+.repo-title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.repo-desc {
+  margin: 0.25rem 0 0.5rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.repo-stats {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.badge {
+  background: rgba(3,102,214,0.08);
+  color: var(--accent);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  #starredList {
+    grid-template-columns: 1fr;
+  }
+}
