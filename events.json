@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "repo": "octocat/Hello-World",
+    "name": "Hello-World",
+    "owner": "octocat",
+    "description": "My first repository on GitHub!",
+    "html_url": "https://github.com/octocat/Hello-World",
+    "language": "JavaScript",
+    "stargazers_count": 1500,
+    "starred_at": "2026-09-09T12:34:56Z"
+  },
+  {
+    "id": 2,
+    "repo": "nodejs/node",
+    "name": "node",
+    "owner": "nodejs",
+    "description": "Node.js JavaScript runtime",
+    "html_url": "https://github.com/nodejs/node",
+    "language": "C++",
+    "stargazers_count": 99000,
+    "starred_at": "2026-09-08T08:15:00Z"
+  },
+  {
+    "id": 3,
+    "repo": "vercel/next.js",
+    "name": "next.js",
+    "owner": "vercel",
+    "description": "The React Framework",
+    "html_url": "https://github.com/vercel/next.js",
+    "language": "TypeScript",
+    "stargazers_count": 84000,
+    "starred_at": "2026-09-07T20:05:10Z"
+  }
+]
